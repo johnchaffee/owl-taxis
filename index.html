@@ -55,9 +55,16 @@
       text-decoration: underline;
     }
   </style>
+  <script
+    src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.9.1/twilio-flex-webchat.min.js"
+    integrity="sha512-yBmOHVWuWT6HOjfgPYkFe70bboby/BTj9TGHXTlEatWnYkW5fFezXqW9ZgNtuRUqHWrzNXVsqu6cKm3Y04kHMA=="
+    crossorigin
+  ></script>
   <body>
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div class="w3-display-topleft w3-padding-large w3-xlarge logo-header black-background">
+      <div
+        class="w3-display-topleft w3-padding-large w3-xlarge logo-header black-background"
+      >
         Owl Taxis
       </div>
       <div class="w3-display-middle black-background book-box">
@@ -85,5 +92,13 @@
         </p>
       </div>
     </div>
+
+    <script>
+      const appConfig = {
+        accountSid: "AC6f98d5d14f252a825e9c089d2839e64e",
+        flexFlowSid: "FO54efa1f5b82b9819feb787ee9b0b0aa2",
+      }
+      Twilio.FlexWebChat.renderWebChat(appConfig)
+    </script>
   </body>
 </html>
