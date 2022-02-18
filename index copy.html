@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <title>Owl Taxis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.9.1/twilio-flex-webchat.min.js"
+    integrity="sha512-yBmOHVWuWT6HOjfgPYkFe70bboby/BTj9TGHXTlEatWnYkW5fFezXqW9ZgNtuRUqHWrzNXVsqu6cKm3Y04kHMA=="
+    crossorigin
+  ></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+    }
+    .myLink {
+      display: none;
+    }
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      text-decoration: underline;
+    }
+    .contact {
+      padding: 16px;
+    }
+    #example1 {
+      /* border: 2px solid black; */
+      /* padding: 25px; */
+      height: 1000px;
+      background: url(https://www.w3schools.com/w3images/london2.jpg);
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+  </style>
+  <body class="w3-light-grey">
+
+    <!-- Navigation Bar -->
+    <!-- <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+      <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"
+        ><b><i class="fa fa-map-marker w3-margin-right"></i>Owl Taxis</b></a
+      >
+    </div> -->
+
+
+
+    <!-- <header class="w3-display-container w3-content" style="max-width: 1500px">
+      <img
+        class="w3-image"
+        src="https://www.w3schools.com/w3images/london2.jpg"
+        alt="London"
+        width="1500"
+        height="700"
+      />
+    </header> -->
+
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- Contact -->
+      <div class="contact">
+        <p>
+          <a href="tel://2069842216" class=""
+            ><i class="fa fa-phone" style="width: 20px"></i>(206) 984-2216</a
+          >
+        </p>
+        <p>
+          <a href="sms://2069842216" class=""
+            ><i class="fa fa-comment" style="width: 20px"></i>Schedule via
+            Text</a
+          >
+        </p>
+        <p>
+          <a href="https://wa.me/+14155238886" target="_blank"
+            ><i class="fa fa-whatsapp" style="width: 20px"></i>Schedule via
+            WhatsApp</a
+          >
+        </p>
+        <p>
+          <a href="sms://8507870267" class=""
+            ><i class="fa fa-comment" style="width: 20px"></i>Text with an
+            Agent</a
+          >
+        </p>
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <!-- <a href="https://m.me/100633889146611" target="_blank"><i class="fa fa-facebook" style="width: 20px"></i>Messenger</a> -->
+      </div>
+    </div>
+
+    <div id="example1">
+    </div>
+
+    <script>
+      const appConfig = {
+        accountSid: "AC6f98d5d14f252a825e9c089d2839e64e",
+        flexFlowSid: "FO54efa1f5b82b9819feb787ee9b0b0aa2",
+      }
+      Twilio.FlexWebChat.renderWebChat(appConfig)
+    </script>
+  </body>
+</html>

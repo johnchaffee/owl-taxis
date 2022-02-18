@@ -12,23 +12,26 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <script
-    src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.9.1/twilio-flex-webchat.min.js"
-    integrity="sha512-yBmOHVWuWT6HOjfgPYkFe70bboby/BTj9TGHXTlEatWnYkW5fFezXqW9ZgNtuRUqHWrzNXVsqu6cKm3Y04kHMA=="
-    crossorigin
-  ></script>
   <style>
     body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
+    h1 {
+      font-family: "Raleway", sans-serif;
     }
-    .myLink {
-      display: none;
+    body,
+    html {
+      height: 100%;
+    }
+    .bgimg {
+      background-image: url("https://www.w3schools.com/w3images/london2.jpg");
+      /* background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); */
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .cta {
+      background-color: black;
+      opacity: 0.75;
+      padding: 20px;
     }
     a:link {
       text-decoration: none;
@@ -45,57 +48,35 @@
     a:active {
       text-decoration: underline;
     }
-    .contact {
-      padding: 16px;
-    }
   </style>
-  <body class="w3-light-grey">
-    <!-- Navigation Bar -->
-    <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-      <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"
-        ><b><i class="fa fa-map-marker w3-margin-right"></i>Owl Taxis</b></a
-      >
-    </div>
-
-    <header class="w3-display-container w3-content" style="max-width: 1500px">
-      <img
-        class="w3-image"
-        src="https://www.w3schools.com/w3images/london2.jpg"
-        alt="London"
-        width="1500"
-        height="700"
-      />
-    </header>
-
-    <div class="w3-content" style="max-width: 1100px">
-      <!-- Contact -->
-      <div class="contact">
-        <a href="tel://2069842216" class=""
-          ><i class="fa fa-phone" style="width: 20px"></i>(206) 984-2216</a
-        >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="sms://2069842216" class=""
-          ><i class="fa fa-comment" style="width: 20px"></i>Bot</a
-        >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://wa.me/+14155238886" target="_blank"
-          ><i class="fa fa-whatsapp" style="width: 20px"></i>WhatsApp</a
-        >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="sms://8507870267" class=""
-          ><i class="fa fa-comment" style="width: 20px"></i>Agent</a
-        >
-        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <!-- <a href="https://m.me/100633889146611" target="_blank"><i class="fa fa-facebook" style="width: 20px"></i>Messenger</a> -->
+  <body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-topleft w3-padding-large w3-xlarge cta">Owl Taxis</div>
+      <div class="w3-display-middle cta">
+        <h2 class="w3-animate-top">Book a Taxi</h2>
+        <hr class="w3-border-grey" style="margin: auto; width: 40%" />
+        <p class="w3-large">
+          <a href="tel://2069842216"
+            ><i class="fa fa-phone" style="width: 30px"></i>(206) 984-2216</a
+          >
+        </p>
+        <p class="w3-large">
+          <a href="sms://8507870267"
+            ><i class="fa fa-comment" style="width: 30px"></i>Text an
+            Agent</a
+          >
+        </p>
+        <p class="w3-large">
+          <a href="sms://2069842216"
+            ><i class="fa fa-commenting" style="width: 30px"></i>Textbot</a
+          >
+        </p>
+        <p class="w3-large">
+          <a href="https://wa.me/+14155238886" target="_blank"
+            ><i class="fa fa-whatsapp" style="width: 30px"></i>WhatsApp</a
+          >
+        </p>
       </div>
     </div>
-
-    <script>
-      const appConfig = {
-        accountSid: "AC6f98d5d14f252a825e9c089d2839e64e",
-        flexFlowSid: "FO54efa1f5b82b9819feb787ee9b0b0aa2",
-      }
-      Twilio.FlexWebChat.renderWebChat(appConfig)
-    </script>
   </body>
 </html>
